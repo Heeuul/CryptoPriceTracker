@@ -10,12 +10,12 @@ const onboardPages = [
   },
   {
     title: "Real time updates",
-    subtitle: "Compare prices between coins",
+    subtitle: "Compare prices between currencies",
     imageUri: "https://frigade.com/img/example2.png",
   },
   {
     title: "View trends of the past week",
-    subtitle: "Press on a coin to view chart",
+    subtitle: "Press on a currency to view chart",
     imageUri: "https://frigade.com/img/example2.png",
   },
 ];
