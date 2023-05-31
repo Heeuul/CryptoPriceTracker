@@ -4,13 +4,18 @@ import { OnboardFlow } from "react-native-onboard";
 
 const onboardPages = [
   {
-    title: "Welcome to my app",
-    subtitle: "This is page 1",
+    title: "Hello!",
+    subtitle: "Welcome to the Crypto Price Tracker",
     imageUri: "https://frigade.com/img/example1.png",
   },
   {
-    title: "Page 2 header",
-    subtitle: "This is page 2",
+    title: "Real time updates",
+    subtitle: "Compare prices between coins",
+    imageUri: "https://frigade.com/img/example2.png",
+  },
+  {
+    title: "View trends of the past week",
+    subtitle: "Press on a coin to view chart",
     imageUri: "https://frigade.com/img/example2.png",
   },
 ];
