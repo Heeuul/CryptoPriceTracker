@@ -6,17 +6,20 @@ const onboardPages = [
   {
     title: "Hello!",
     subtitle: "Welcome to the Crypto Price Tracker",
-    imageUri: "https://frigade.com/img/example1.png",
+    imageUri:
+      "https://raw.githubusercontent.com/Heeuul/CryptoPriceTracker/main/assets/Onboard1.png?token=GHSAT0AAAAAACDKVIMQL5INSHIHTMXTCJNSZDXK4BA",
   },
   {
     title: "Real time updates",
     subtitle: "Compare prices between currencies",
-    imageUri: "https://frigade.com/img/example2.png",
+    imageUri:
+      "https://raw.githubusercontent.com/Heeuul/CryptoPriceTracker/main/assets/Onboard2.png?token=GHSAT0AAAAAACDKVIMQOI34R57CDJZNLPRGZDXK4XA",
   },
   {
     title: "View trends of the past week",
     subtitle: "Press on a currency to view chart",
-    imageUri: "https://frigade.com/img/example2.png",
+    imageUri:
+      "https://raw.githubusercontent.com/Heeuul/CryptoPriceTracker/main/assets/Onboard3.png?token=GHSAT0AAAAAACDKVIMR2FDGRU73INALTFECZDXK4ZA",
   },
 ];
 
