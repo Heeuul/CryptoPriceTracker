@@ -1,34 +1,47 @@
-import { View, Text } from "react-native";
+import { OnboardFlow, PrimaryButton } from "react-native-onboard";
+import { Button, Image } from "react-native";
 import React from "react";
-import { OnboardFlow } from "react-native-onboard";
 
 const onboardPages = [
   {
     title: "Hello!",
     subtitle: "Welcome to the\nCrypto Price Tracker",
-    imageUri:
-      "https://raw.githubusercontent.com/Heeuul/CryptoPriceTracker/main/assets/Onboard1.png?token=GHSAT0AAAAAACDKVIMQL5INSHIHTMXTCJNSZDXK4BA",
+    imageUri: Image.resolveAssetSource(require("../assets/Onboard/1_Hello.png"))
+      .uri,
   },
   {
     title: "Real Time Updates",
-    subtitle: "Get the latest info of the prices",
-    imageUri:
-      "https://www.shutterstock.com/image-vector/real-time-icon-solid-260nw-1722565684.jpg",
+    subtitle: "Get latest information\nof the currencies' changes",
+    imageUri: Image.resolveAssetSource(
+      require("../assets/Onboard/2_RealTimeUpdates.png")
+    ).uri,
   },
   {
-    title: "Multiple Currencies",
-    subtitle: "Compare prices\nbetween currencies",
-    imageUri:
-      "https://raw.githubusercontent.com/Heeuul/CryptoPriceTracker/main/assets/Onboard2.png?token=GHSAT0AAAAAACDKVIMQOI34R57CDJZNLPRGZDXK4XA",
+    title: "Variety Support",
+    subtitle: "Compare prices between\nmultiple different currencies",
+    imageUri: Image.resolveAssetSource(
+      require("../assets/Onboard/3_VarietySupport.png")
+    ).uri,
   },
   {
     title: "Past Week's Trend",
-    subtitle: "Tap on a currency to\nview changes for\nthe past 7 days",
-    imageUri:
-      "https://raw.githubusercontent.com/Heeuul/CryptoPriceTracker/main/assets/Onboard3.png?token=GHSAT0AAAAAACDKVIMRJQXUPPAWBD4UCZO4ZDXLCSQ",
+    subtitle: "Tap on a currency to view\nchanges for the past 7 days",
+    imageUri: Image.resolveAssetSource(
+      require("../assets/Onboard/4_PastWeek'sTrend.png")
+    ).uri,
   },
 ];
 
 export default function Onboard() {
-  return <OnboardFlow pages={onboardPages} type="fullscreen" />;
+  return (
+    <OnboardFlow
+      pages={onboardPages}
+      type="fullscreen"
+      showDismissButton
+      autoPlay
+      PrimaryButtonComponent={() => {}}
+      paginationColor="lightskyblue"
+      paginationSelectedColor="deepskyblue"
+    />
+  );
 }
